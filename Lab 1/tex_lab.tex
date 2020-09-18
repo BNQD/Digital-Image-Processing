@@ -1,0 +1,216 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\date{}
+
+\begin{document}
+
+\textbf{Introduction}
+
+This lab introduced various methods of image processing. Different
+transforms will be applied to images and the effects will be examined.
+
+\textbf{Section 2.1 - Q1}
+
+\includegraphics{cid:Image_0.png}
+
+\includegraphics{cid:Image_1.png}\includegraphics{cid:Image_2.png}
+
+\textbf{Section 2.1 - Q2}
+
+\includegraphics{cid:Image_3.png}
+
+\includegraphics{cid:Image_4.png}
+
+\textbf{Section 2.1 - Q3}
+
+\includegraphics{cid:Image_5.png}
+
+\includegraphics{cid:Image_6.png}
+
+\textbf{Section 2.2 - Q1}
+
+\includegraphics{cid:Image_7.png}
+
+\includegraphics{cid:Image_8.png}\includegraphics{cid:Image_9.png}
+
+\textbf{Section 2.2 - Q2}
+
+\includegraphics{cid:Image_10.png}
+
+\includegraphics{cid:Image_11.png}
+
+\textbf{Section 2.2 - Q3}
+
+\includegraphics{cid:Image_12.png}
+
+\includegraphics{cid:Image_13.png}
+
+\textbf{Section 2.2 - Q4}
+
+\includegraphics{cid:Image_14.png}
+
+\textbf{Section 2.2 - Q5}
+
+\includegraphics{cid:Image_15.png}
+
+\textbf{Section 2.2 - Q6}
+
+\includegraphics{cid:Image_16.png}
+
+\{0: 0, 1: 2, 2: 4, 3: 6, 4: 8, 5: 10, 6: 12, 7: 14, 8: 16, 9: 18, 10:
+20, 11: 22, 12: 24, 13: 26, 14: 28, 15: 30, 16: 32, 17: 34, 18: 36, 19:
+38, 20: 15, 21: 16, 22: 17, 23: 17, 24: 18, 25: 19, 26: 20, 27: 21, 28:
+21, 29: 22, 30: 23, 31: 24, 32: 24, 33: 25, 34: 26, 35: 27, 36: 28, 37:
+28, 38: 29, 39: 30, 40: 31, 41: 31, 42: 32, 43: 33, 44: 34, 45: 35, 46:
+35, 47: 36, 48: 37, 49: 38, 50: 38, 51: 39, 52: 40, 53: 41, 54: 42, 55:
+42, 56: 43, 57: 44, 58: 45, 59: 45, 60: 46, 61: 47, 62: 48, 63: 49, 64:
+49, 65: 50, 66: 51, 67: 52, 68: 52, 69: 53, 70: 54, 71: 55, 72: 56, 73:
+56, 74: 57, 75: 58, 76: 59, 77: 59, 78: 60, 79: 61, 80: 62, 81: 63, 82:
+63, 83: 64, 84: 65, 85: 66, 86: 66, 87: 67, 88: 68, 89: 69, 90: 70, 91:
+70, 92: 71, 93: 72, 94: 73, 95: 73, 96: 74, 97: 75, 98: 76, 99: 77, 100:
+77, 101: 78, 102: 79, 103: 80, 104: 80, 105: 81, 106: 82, 107: 83, 108:
+84, 109: 84, 110: 85, 111: 86, 112: 87, 113: 87, 114: 88, 115: 89, 116:
+90, 117: 91, 118: 91, 119: 92, 120: 93, 121: 94, 122: 94, 123: 95, 124:
+96, 125: 97, 126: 98, 127: 98, 128: 99, 129: 100, 130: 101, 131: 101,
+132: 102, 133: 103, 134: 104, 135: 105, 136: 105, 137: 106, 138: 107,
+139: 108, 140: 108, 141: 109, 142: 110, 143: 111, 144: 112, 145: 112,
+146: 113, 147: 114, 148: 115, 149: 115, 150: 116, 151: 117, 152: 118,
+153: 119, 154: 119, 155: 120, 156: 121, 157: 122, 158: 122, 159: 123,
+160: 124, 161: 125, 162: 126, 163: 126, 164: 127, 165: 128, 166: 129,
+167: 129, 168: 130, 169: 131, 170: 132, 171: 133, 172: 133, 173: 134,
+174: 135, 175: 136, 176: 136, 177: 137, 178: 138, 179: 139, 180: 140,
+181: 140, 182: 141, 183: 142, 184: 143, 185: 143, 186: 144, 187: 145,
+188: 146, 189: 147, 190: 147, 191: 148, 192: 149, 193: 150, 194: 150,
+195: 151, 196: 152, 197: 153, 198: 154, 199: 154, 200: 155, 201: 383,
+202: 385, 203: 387, 204: 389, 205: 391, 206: 393, 207: 395, 208: 397,
+209: 399, 210: 400, 211: 402, 212: 404, 213: 406, 214: 408, 215: 410,
+216: 412, 217: 414, 218: 416, 219: 418, 220: 420, 221: 421, 222: 423,
+223: 425, 224: 427, 225: 429, 226: 431, 227: 433, 228: 435, 229: 437,
+230: 439, 231: 441, 232: 442, 233: 444, 234: 446, 235: 448, 236: 450,
+237: 452, 238: 454, 239: 456, 240: 458, 241: 460, 242: 462, 243: 463,
+244: 465, 245: 467, 246: 469, 247: 471, 248: 473, 249: 475, 250: 477,
+251: 479, 252: 481, 253: 483, 254: 484, 255: 486\}
+
+\textbf{Conclusion}
+
+Throughout the lab, various forms of image processing were used and
+analyzed.
+
+\textbf{Analysis}
+
+Question 1
+
+To do an alpha mask you can let intensity
+
+I(x,y) = (Ia(x,y) + Ib(x,y)*Normalize(M(x,y)))/2
+
+- Where Ia is the intensity of image a
+
+- Where Ib is the intensity of image b
+
+- Where M is the intensity of the mask
+
+This is taking the average of the two images intensities taking the mask
+into account
+
+Question 2
+
+- T(r) applies a contrast\_stretch which normalizes the contrast in the
+image. In other words evenly distributing the intensities over the range
+255 to 0.
+
+Question 3
+
+- LUT can also improve performance for computation intensive transforms.
+
+- The LUT takes alot of memory which can be bad if running on a small
+machine.
+
+- The LUT harder to modify than a function pointer.
+
+- In the case of contrast stretching it depends on the image making it
+non reusable.
+
+- LUT's can't be reused for translation transforms
+
+Question 4
+
+- Contrast stretching could be used to bring the higher intensity range
+down to the display range by normalizing all the values then multiplying
+them by 2\^{}8.
+
+- Ie 2\^{}8*(r/(r\_max-r\_min)-r\_min/(r\_max-r\_min)
+
+- Some considerations should be made if there is large amounts of
+intensities in a small range as the detail will be lost on the display.
+
+Question 5
+
+- If an image is very dim then the range of intensities would be low
+making the contrast stretching hard to impossible. As many distinct
+points would share intensities, they would be normalized to the same
+value.
+
+- Sensor noise on a dim image will have the effect of disabling or
+significantly hindering the contrast stretch. This is due to the noise
+widening the range between r\_min and r\_max. With the upper bound
+having noise from 0 to 255 totally disabling the contrast stretch.
+
+\end{document}
